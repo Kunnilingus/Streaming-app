@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+.GamePage {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.GamePage__Tablet {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.GamePage__Mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.GamePage__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.Game__profile {
+  display: flex;
+  margin-bottom: 50px;
+}
+.Game__profile-img {
+  width: 400px;
+}
+.Game__profile-desc {
+  width: 600px;
+}
+.Game__profile-desc p {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.related-streams {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Media */
+.GamePage__content-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.related-streams-media {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Game__profile-img-media {
+  width: 30%;
+  min-width: 30% !important;
+  height: 30%;
+  min-height: 20%;
+}
+.Game__profile-desc-media {
+  margin-left: 10px;
+  font-size: 100%;
+  line-height: 200%;
+}

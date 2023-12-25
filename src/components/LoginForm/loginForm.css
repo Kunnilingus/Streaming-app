@@ -1,0 +1,31 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 15px;
+  background-color: #222222;
+  width: 500px;
+  height: 250px;
+  margin-top: 250px;
+}
+.LoginForm input {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #222222;
+  border: 1px solid #000;
+  text-align: center;
+}
+.LoginForm button {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #222 0%, rgba(88, 0, 0, 0.67) 100%);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.LoginForm input::-webkit-input-placeholder {
+  text-align: center;
+}

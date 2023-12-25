@@ -1,0 +1,53 @@
+.Chat {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  height: 500px;
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #222222;
+}
+.Chat__input {
+  width: 230px;
+  height: 50px;
+  outline: none;
+  background-color: #222222;
+  color: #fff;
+  border-top: 1px solid #000;
+  text-indent: 10px;
+}
+.Chat__input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+.Chat__btn {
+  cursor: pointer;
+  width: 50px;
+  height: 51px;
+  background-color: #222222;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.Chat__messages {
+  align-self: flex-start;
+  padding: 10px;
+  font-size: 14px;
+}
+.Chat__controls {
+  display: flex;
+}
+.emojis {
+  display: flex;
+  border-top: 1px solid #000;
+  align-items: center;
+}
+.emojis img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.none {
+  display: none;
+}

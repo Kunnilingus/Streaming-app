@@ -1,0 +1,29 @@
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 34px;
+  right: 32px;
+  background-color: #222222;
+  min-width: 160px;
+  min-height: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  border-radius: 30px;
+}
+.dropdown__content img {
+  margin-top: 55px;
+  width: 48px;
+  height: 48px;
+}
+.show {
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* .dropdown:hover .dropdown__content {
+  display: block;
+} */

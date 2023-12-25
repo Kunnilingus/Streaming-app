@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+.PaymentPage {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.PaymentPage__Tablet {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.PaymentPage__Mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.payment__params {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 200px;
+  background-color: #222222;
+  border-radius: 15px;
+  height: 300px;
+  width: 500px;
+}
+.payment__params-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.payment__params-number {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-self: center;
+}
+.payment__params-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-self: center;
+}
+.payment__params-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 10px;
+}
+.payment__params-code input {
+  width: 100px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.cvv {
+  width: 100px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.long {
+  width: 250px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.payment__params-btn {
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}

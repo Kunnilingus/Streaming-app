@@ -1,0 +1,54 @@
+.sideBar {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  min-width: 80px;
+  max-width: 80px;
+  height: 100vh;
+  justify-self: start;
+  background-color: #222222;
+}
+.logo {
+  cursor: pointer;
+  margin-top: 25px;
+  width: 64px;
+  height: 64px;
+  align-self: center;
+}
+.sideBar__content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sideBar__content img {
+  width: 64px;
+  height: 64px;
+}
+.choosen {
+  border-right: 4px solid red;
+  background: linear-gradient(237deg, #222 0%, #6f1111 100%);
+}
+.home,
+.account,
+.translation,
+.categories,
+.subs,
+.stats,
+.about {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  margin-bottom: 5px;
+}
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.download img {
+  margin-bottom: 10px;
+}

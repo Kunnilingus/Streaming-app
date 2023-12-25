@@ -1,0 +1,76 @@
+.headerMobile {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100vw;
+}
+.headerMobile form {
+  position: relative;
+}
+.header__input-m {
+  display: block;
+  height: 30px;
+  width: 100%;
+  background-color: #222222;
+  color: #000;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header__btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0.15em;
+  right: 0.15em;
+  height: 26px;
+  width: 50px;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  background-color: #222222;
+  cursor: pointer;
+}
+.header__btn img {
+  align-self: center;
+  width: 24px;
+  height: 24px;
+}
+.sideBarMobile__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: min-content;
+  max-height: max-content;
+  background: #222222;
+  width: 100vw;
+}
+.sideBarMobile__content img {
+  width: 100%;
+}
+.choosenMobile {
+  border-bottom: 3px solid red;
+  background: linear-gradient(237deg, #222 0%, #6f1111 100%);
+}
+.homeMobile,
+.accountMobile,
+.translationMobile,
+.categoriesMobile,
+.subsMobile,
+.aboutMobile {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  align-self: center;
+}
+.statsMobile {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  align-self: center;
+}
+.statsMobile img {
+  width: 100%;
+}

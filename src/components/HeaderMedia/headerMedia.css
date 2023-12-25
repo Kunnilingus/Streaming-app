@@ -1,0 +1,115 @@
+.headerMedia {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100vw;
+}
+.headerMedia form {
+  position: relative;
+  margin-left: 20px;
+}
+.header__input {
+  display: block;
+  height: 30px;
+  width: 300px;
+  background-color: #222222;
+  color: #000;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header__btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0.2em;
+  right: 0.15em;
+  height: 26px;
+  width: 50px;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  background-color: #222222;
+  cursor: pointer;
+}
+.header__btn img {
+  align-self: center;
+  width: 24px;
+  height: 24px;
+}
+.header__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #222222;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 75px;
+  max-height: 75px;
+  margin-right: 120px;
+}
+.bell {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.wallet {
+  margin-left: 0px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.money {
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.money p {
+  text-shadow: 1px 1px #363636;
+}
+.profile {
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  gap: 5px;
+}
+.profile img {
+  width: 64px;
+  height: 64px;
+}
+.sideBarMedia__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 75px;
+  background: #222222;
+  width: 550px;
+  border-radius: 30px;
+}
+.sideBarMedia__content img {
+  width: 64px;
+  height: 64px;
+}
+.choosenMedia {
+  border-bottom: 4px solid red;
+  background: linear-gradient(237deg, #222 0%, #6f1111 100%);
+}
+.homeMedia,
+.accountMedia,
+.translationMedia,
+.categoriesMedia,
+.subsMedia,
+.statsMedia,
+.aboutMedia {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  align-self: center;
+  border-radius: 10px;
+}

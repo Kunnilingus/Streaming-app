@@ -1,0 +1,122 @@
+.header {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.header form {
+  position: relative;
+  margin-left: 200px;
+}
+.header__input {
+  display: block;
+  height: 30px;
+  width: 300px;
+  background-color: #222222;
+  color: #000;
+  border-radius: 15px;
+  text-align: center;
+}
+.header__btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0.2em;
+  right: 0.15em;
+  height: 26px;
+  width: 50px;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  background-color: #222222;
+  cursor: pointer;
+}
+.header__btn img {
+  align-self: center;
+  width: 24px;
+  height: 24px;
+}
+.header__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #222222;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 75px;
+  max-height: 75px;
+  /* margin-right: 120px; */
+}
+.bell {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.wallet {
+  margin-left: 0px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.money {
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.money p {
+  text-shadow: 1px 1px #363636;
+}
+.profile {
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  gap: 5px;
+}
+.profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  cursor: pointer;
+}
+.dropdown-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-self: self-end;
+  margin-right: 19px;
+  margin-top: 25px;
+  background-color: #222222;
+  border-radius: 15px;
+  width: 100px;
+  height: 150px;
+  text-align: center;
+  gap: 10px;
+  overflow: hidden;
+}
+.dropdown-menu p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #000;
+  margin-top: 10px;
+  height: 50px;
+}
+.dropdown-menu p:hover {
+  background: linear-gradient(180deg, #222 0%, rgba(88, 0, 0, 0.67) 100%);
+}
+.show-menu {
+  display: none;
+}

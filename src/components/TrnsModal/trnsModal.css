@@ -1,0 +1,68 @@
+.TrnsModal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  width: 100%;
+  height: 100%;
+  background-color: #0000005d;
+}
+.TrnsModal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.TrnsModal__content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  margin-top: 300px;
+  background-color: #222222;
+  border-radius: 15px;
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+.TrnsModal__content.active {
+  transform: scale(1);
+}
+.TrnsModal__content-title {
+  align-self: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+.TrnsModal__content-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 95px;
+  margin-left: 10px;
+}
+.TrnsModal__content-form input {
+  width: 300px;
+  height: 25px;
+  text-align: center;
+  background-color: #222222;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.TrnsModal__content-btns {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  margin-top: 90px;
+}
+.TrnsModal__content-btns button {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  background: linear-gradient(180deg, #222 0%, rgba(88, 0, 0, 0.67) 100%);
+}
+.TrnsModal__content-btns button:hover {
+  filter: brightness(90%);
+  transition: 0.2s all ease-in;
+}

@@ -1,0 +1,72 @@
+.SubEl {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+  min-width: min-content;
+  max-width: 70%;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background: linear-gradient(
+    to right,
+    rgb(182, 32, 32),
+    rgb(87, 20, 20) 50%,
+    #222 50%
+  );
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.5s ease;
+}
+.SubEl:hover {
+  background-position: 0 100%;
+}
+.SubEl::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s;
+}
+.SubEl:hover {
+  background-color: red;
+  transition: 0.3s ease-in;
+}
+.SubEl:hover::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: red;
+  transition: width 0.5s;
+}
+.SubEl img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 50%;
+}
+.SubEl p {
+  font-size: 16px;
+}
+.none {
+  display: none;
+}
+.online-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.SubEl h3 {
+  font-size: 16px;
+  font-weight: normal;
+}

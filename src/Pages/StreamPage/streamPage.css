@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+.StreamPage {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.StreamPage__Tablet {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.StreamPage__Mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.StreamPage__content {
+  margin-left: 200px;
+  margin-top: 50px;
+  display: flex;
+}
+.SPmain__content {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+.chat {
+  margin-left: 90px;
+}
+.main-desc {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin-top: 10px;
+  height: 70px;
+}
+.main-desc-min {
+  display: flex;
+  margin-left: 5px;
+}
+.main-desc img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.main-desc-min-info {
+  margin-left: 5px;
+  align-self: center;
+}
+.main-desc-followers {
+  margin-right: 10px;
+}
+.main__content-advert {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  margin-top: 30px;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+.fuck__twitch1 {
+  background: #222222;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.fuck__twitch2 {
+  background: #222222;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-column: span 2;
+}
+.fuck__twitch3 {
+  background: #222222;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.fuck__twitch4 {
+  background: #222222;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-column: span 2;
+}
+.fuck__twitch5 {
+  background: #222222;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-column: span 2;
+}
+.fuck__twitch6 {
+  background: #222222;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-column: span 2;
+}
+
+/*Media*/
+.StreamPage__content-media {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.SPmain__content-media {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.main__content-video-media {
+  width: 100%;
+}
+.main-desc-media {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 70px;
+  width: 100%;
+}
+.main-desc-media img {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+}
+.chat-none {
+  display: none;
+}

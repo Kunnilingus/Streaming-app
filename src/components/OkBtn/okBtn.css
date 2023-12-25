@@ -1,0 +1,20 @@
+.OkBtn {
+  width: 50px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(180deg, #222 0%, rgba(88, 0, 0, 0.67) 100%);
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.OkBtn:hover {
+  filter: brightness(90%);
+  transition: 0.2s all ease-in;
+}
+.OkBtn img {
+  width: 29px;
+  margin-left: 8px;
+  margin-top: 1.5px;
+}

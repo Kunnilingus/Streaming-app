@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+.Trns {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.Trns__header {
+  align-self: center;
+  margin-top: 55px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 2fr 1fr;
+  margin-left: 120px;
+  gap: 30px;
+  margin-top: 55px;
+}
+.Trns__settings {
+  display: flex;
+  justify-self: end;
+  flex-direction: column;
+  background-color: #222222;
+  height: 500px;
+  width: 250px;
+  border-radius: 15px;
+  text-align: center;
+}
+.Trns__settings-paragraphs {
+  align-self: center;
+}
+.Trns__settings p {
+  margin-left: 10px;
+  margin-top: 10px;
+  align-self: center;
+}
+.Trns__settings-btn1 {
+  margin-top: 40px;
+  align-self: center;
+}
+.Trns__settings-btn2 {
+  margin-top: 40px;
+}
+.Trns__settings input {
+  width: 180px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+.Trns__settings-announsment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.Trns__settings-modal:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  transition: all 0.1s ease-in;
+}
+.Trns__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Trns__main-screen {
+  width: 1000px;
+  height: 500px;
+}
+.Trns__main-desc {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 10px;
+  height: 70px;
+}
+.Trns__main-desc-min {
+  display: flex;
+  margin-left: 5px;
+}
+.Trns__main-desc-min-info {
+  margin-left: 5px;
+  align-self: center;
+}
+.Trns__main-desc img {
+  width: 64px;
+  height: 64px;
+}
+.Trns__main-desc-followers {
+  margin-right: 10px;
+}
+.Trns__main-advert {
+  margin-top: 30px;
+  display: grid;
+  grid: 250px 250px auto / 1fr 1fr 1fr;
+  gap: 20px;
+}
+.Trns__main-advert img {
+  cursor: pointer;
+}
+.socials img {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/*Media*/
+.Trns__Tablet {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.Trns__Mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.grid-container-tablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.Trns__settings-tablet {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  height: 250px;
+  width: 500px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.Trns__settings-tablet input {
+  width: 180px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+.Trns__settings-onlyTablet {
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.Trns__settings-tablet p {
+  margin-left: 10px;
+  margin-top: 10px;
+  align-self: center;
+}
+.Trns__settings-btn1-tablet {
+  margin-top: 10px;
+  align-self: center;
+}
+.Trns__settings-btn2-tablet {
+  margin-top: 56px;
+}
+.Trns__settings-announsment-tablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.Trns__main-screen-tablet {
+  width: 90%;
+}
+.Trns__main-desc-tablet {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 10px;
+  height: 70px;
+}
+.Trns__main-advert-tablet {
+  margin-left: 60px;
+  margin-top: 30px;
+  display: grid;
+  grid: auto / 50% 50%;
+  gap: 20px;
+}

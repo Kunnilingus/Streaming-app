@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+.Account {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100%;
+  max-height: min-content;
+  width: 100%;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.account__content {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.account__grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 55px;
+}
+.account__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.account__info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.account__img {
+  max-width: 250px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.account__desc {
+  background: #222222;
+  border-radius: 15px;
+  width: 580px;
+  height: 474px;
+  flex-shrink: 0;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "about about about"
+    "age trns subs"
+    "email email email";
+}
+.account__desc-about {
+  grid-area: about;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 540px;
+  height: 117px;
+  margin-top: 20px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+}
+.account__desc-age {
+  grid-area: age;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 150px;
+  height: 180px;
+}
+.desc-count {
+  margin-top: 15px;
+  font-size: 96px;
+}
+.account__desc-trns {
+  grid-area: trns;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 150px;
+  height: 180px;
+}
+.account__desc-subs {
+  grid-area: subs;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 150px;
+  height: 180px;
+}
+.account__desc-email {
+  grid-area: email;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 540px;
+  height: 117px;
+  margin-bottom: 5px;
+}
+.account__settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #5a1010;
+  height: 710px;
+  margin-top: 95px;
+}
+.account__settings h1 {
+  margin-bottom: 165px;
+}
+.account__settings-about {
+  background: #222222;
+  width: 637px;
+  height: 252px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.form input {
+  width: 250px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.form-payment {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.form-payment input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-payment input {
+  width: 250px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.form-trns {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.form-trns input {
+  width: 250px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+.account__settings-payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 637px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #222;
+}
+.account__settings-btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(180deg, #222 0%, rgba(88, 0, 0, 0.67) 100%);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+}
+.account__settings-btn:hover {
+  filter: brightness(90%);
+  transition: 0.2s all ease-in;
+}
+
+/*Media*/
+.Account__Tablet {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: max-content;
+  width: 100vw;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.Account__Mobile {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: max-content;
+  width: 100vw;
+  color: white;
+  background-image: url("../../assets/Frame.png");
+}
+.account__content-media {
+  display: flex;
+  flex-direction: column;
+}
+.account__grid-container-media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.account__desc-mb {
+  overflow: hidden;
+  background: #222222;
+  border-radius: 15px;
+  width: 90%;
+  height: 474px;
+  flex-shrink: 0;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "about about about"
+    "age trns subs"
+    "email email email";
+}
+.account__desc-about-mb {
+  grid-area: about;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+  height: 117px;
+  margin-top: 20px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+}
+.account__desc-age-mb {
+  grid-area: age;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 75%;
+  height: 180px;
+}
+.account__desc-trns-mb {
+  grid-area: trns;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 75%;
+  height: 180px;
+}
+.account__desc-subs-mb {
+  grid-area: subs;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 75%;
+  height: 180px;
+}
+.account__desc-email-mb {
+  grid-area: email;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(267deg, #2b0d0d 0.25%, #191212 100%);
+  width: 95%;
+  height: 117px;
+  margin-bottom: 5px;
+}
+.account__settings-about-mb {
+  background: #222222;
+  width: 90%;
+  height: 252px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.account__settings-payment-mb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #222;
+}
+.account__settings-live-mb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #222;
+}
