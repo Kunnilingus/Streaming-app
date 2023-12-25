@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Account from "./Pages/Account/Account";
 import Translation from "./Pages/Translation/Translation";
 import Categories from "./Pages/Categories/Categories";
 import GamePage from "./Pages/GamePage/GamePage";
@@ -11,6 +10,9 @@ import Statistics from "./Pages/Statistics/Statistics";
 import PaymentPage from "./Pages/PaymentPage/PaymentPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import RegisterPage from "./Pages/RegisterPage/RegisterPage";
+import { lazy, Suspense } from "react";
+
+const Account = lazy(() => import("./Pages/Account/Account"));
 
 function App() {
   return (
@@ -21,7 +23,14 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/*" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/account" element={<Account />} />
+          <Route
+            path="/account"
+            element={
+              <Suspense fallback={<p>Loading...</p>}>
+                <Account />
+              </Suspense>
+            }
+          />
           <Route path="/paymentPage" element={<PaymentPage />} />
           <Route path="/translation" element={<Translation />} />
           <Route path="/categories" element={<Categories />} />
